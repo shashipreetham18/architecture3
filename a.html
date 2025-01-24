@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowd Flow Monitoring Architecture</title>
+    <style>
+        .diagram-container {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 26px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .diagram-box {
+            text-align: center;
+            padding: 10px;
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            width: 220px;
+            background-color: #E8F5E9;
+        }
+        .diagram-icon {
+            width: 50px;
+            height: 50px;
+        }
+        .arrow-down {
+            width: 2px;
+            height: 20px;
+            background-color: #2196F3;
+            margin: 0 auto;
+        }
+        .arrow-text {
+            font-weight: bold;
+            color: #2196F3;
+            margin: 5px 0;
+        }
+        .attribution {
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crowd Flow Monitoring Architecture</h1>
+    <div class="diagram-container">
+        <!-- Frontend -->
+        <div class="diagram-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/2491/2491013.png" alt="Frontend Icon" class="diagram-icon">
+            <div>Frontend (React.js, D3.js)</div>
+        </div>
+        <div class="arrow-down"></div>
+        <div class="arrow-text">Displays Heatmaps & Alerts</div>
 
+        <!-- Backend -->
+        <div class="diagram-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/1256/1256656.png" alt="Backend Icon" class="diagram-icon">
+            <div>Backend (Node.js, Express.js)</div>
+        </div>
+        <div class="arrow-down"></div>
+        <div class="arrow-text">Processes Data</div>
+
+        <!-- AI/ML Models -->
+        <div class="diagram-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/3767/3767075.png" alt="AI/ML Icon" class="diagram-icon">
+            <div>AI/ML Models<br>(YOLOv5, DBSCAN)</div>
+        </div>
+        <div class="arrow-down"></div>
+        <div class="arrow-text">Analyzes Crowd Data</div>
+
+        <!-- Database -->
+        <div class="diagram-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/2793/2793464.png" alt="Database Icon" class="diagram-icon">
+            <div>Database (MongoDB)</div>
+        </div>
+        <div class="arrow-down"></div>
+        <div class="arrow-text">Stores Historical Data</div>
+
+        <!-- Real-Time Processing -->
+        <div class="diagram-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/603/603175.png" alt="Real-Time Processing Icon" class="diagram-icon">
+            <div>Real-Time Processing (WebSocket, Kafka)</div>
+        </div>
+        <div class="arrow-down"></div>
+        <div class="arrow-text">Generates Live Insights</div>
+    </div>
+
+    <div class="attribution">
+        Icons by <a href="https://www.flaticon.com" target="_blank">Flaticon</a>.
+    </div>
+</body>
+</html>
